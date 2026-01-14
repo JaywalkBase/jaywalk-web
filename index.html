@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaywalk Miner | Mine Diamond Leads from LinkedIn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        purple: {
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            900: '#4c1d95',
+                        },
+                        dark: '#0f0f0f',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .diamond-glow {
+            text-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, #0f0f0f 100%),
+                radial-gradient(circle at 50% 30%, rgba(124, 58, 237, 0.2) 0%, rgba(15, 15, 15, 0) 70%);
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0f0f0f;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #7c3aed;
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-purple-600 selection:text-white">
+
+    <!-- Nav -->
+    <nav class="fixed w-full z-50 top-0 left-0 border-b border-white/5 bg-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="assets/app_icon.png" alt="Jaywalk Icon" class="w-8 h-8">
+                <span class="font-bold text-xl tracking-tight">JAYWALK <span class="text-purple-500">MINER</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+                <a href="#features" class="hover:text-white transition">Features</a>
+                <a href="#download" class="hover:text-white transition">Download</a>
+                <a href="https://twitter.com/placeholder" class="hover:text-purple-400 transition">Twitter</a>
+            </div>
+            <a href="#download"
+                class="bg-purple-600 hover:bg-purple-500 text-white px-5 py-2 rounded-full font-semibold transition shadow-[0_0_15px_rgba(124,58,237,0.4)] text-sm">
+                Get Early Access
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-32 hero-gradient min-h-screen flex items-center justify-center">
+        <div class="max-w-4xl mx-auto px-6 text-center z-10">
+
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel mb-8 animate-fade-in-up">
+                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                <span class="text-sm font-medium text-gray-300">v1.0 Early Access Released</span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
+                Mine <span class="text-purple-500 diamond-glow">Diamond Leads</span><br>
+                from LinkedIn
+            </h1>
+
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                The lead generation tool Google tried to ban. Now strictly on Desktop.
+                <br>Safe, powerful, and completely under your control.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
+                <a href="https://github.com/JaywalkBase/jaywalk-miner/releases/download/v1.0.0/Jaywalk.Miner-1.0.0-arm64.dmg"
+                    id="download-btn"
+                    class="group relative px-8 py-4 bg-white text-dark font-bold text-lg rounded-xl hover:scale-105 transition duration-200 shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+                    <div class="absolute inset-0 bg-purple-500 blur-lg opacity-20 group-hover:opacity-40 transition">
+                    </div>
+                    <span class="relative flex items-center gap-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                        Download for Mac
+                    </span>
+                    <div class="text-xs text-center font-normal text-gray-500 mt-1">Apple Silicon & Intel</div>
+                </a>
+
+                <a href="#how-it-works"
+                    class="px-8 py-4 glass-panel rounded-xl font-semibold hover:bg-white/5 transition flex items-center gap-2">
+                    <span class="text-purple-400">▶</span> Watch Demo
+                </a>
+            </div>
+
+            <!-- The Hack / Security Notice -->
+            <div class="glass-panel p-6 rounded-2xl max-w-2xl mx-auto text-left border-l-4 border-yellow-500">
+                <div class="flex items-start gap-4">
+                    <div class="text-2xl">⚠️</div>
+                    <div>
+                        <h3 class="font-bold text-white mb-2">macOS "Damaged App" Fix</h3>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Since we are an independent tool (unverified by Apple), you might see a warning.
+                            If macOS says the app is "damaged", run this terminal command:
+                        </p>
+                        <div class="bg-black/50 p-3 rounded-lg font-mono text-xs text-green-400 flex justify-between items-center group cursor-pointer"
+                            onclick="navigator.clipboard.writeText('xattr -cr /Applications/Jaywalk\\ Miner.app'); alert('Command copied!')">
+                            <code class="break-all">xattr -cr /Applications/Jaywalk\ Miner.app</code>
+                            <span class="opacity-0 group-hover:opacity-100 text-gray-500">Copy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-24 bg-dark">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-panel p-8 rounded-2xl hover:bg-white/5 transition duration-300">
+                    <div class="w-12 h-12 bg-purple-900/50 rounded-lg flex items-center justify-center text-2xl mb-6">
+                        👁️</div>
+                    <h3 class="text-xl font-bold mb-4">BrowserView Technology</h3>
+                    <p class="text-gray-400">
+                        Unlike Chrome extensions, we use a dedicated browser container.
+                        LinkedIn sees a real user, minimizing ban risks.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="glass-panel p-8 rounded-2xl hover:bg-white/5 transition duration-300">
+                    <div class="w-12 h-12 bg-purple-900/50 rounded-lg flex items-center justify-center text-2xl mb-6">💎
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Export Diamond Leads</h3>
+                    <p class="text-gray-400">
+                        Automatically extract high-value comments, names, and titles.
+                        Identify buyers, not just noise.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="glass-panel p-8 rounded-2xl hover:bg-white/5 transition duration-300">
+                    <div class="w-12 h-12 bg-purple-900/50 rounded-lg flex items-center justify-center text-2xl mb-6">💾
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Local First</h3>
+                    <p class="text-gray-400">
+                        Your data stays on your machine. CSV files are saved directly to your Downloads folder.
+                        No servers attached.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Jaywalk Miner. All rights reserved.</p>
+        <p class="mt-2">Built for the bold.</p>
+    </footer>
+
+</body>
+
+</html>
